@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>shoe-store</title>
+</head>
+
+<body>
+  <header class="container-fluid p-0">
+    <div class="row text-center">
+      <div class="col-12 bg-dark center-text text-light">
+        <h1>Shoe Store </h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row" id="shoes">
+        <!-- temp Start -->
+        <!-- <div class="col-4 p-4">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/209889d9-4910-4f06-9d07-18afa558b566/air-max-270-mens-shoes-KkLcGR.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nike Shoe</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- temp end -->
+  </main>
+  <footer class="bg-dark text-light">
+    <!-- form -->
+    <form class="row  p-2" onsubmit="app.shoesController.createShoe(event)">
+      <h3 class="col-12">Buy a Shoe</h3>
+      <div class="mb-3 col-5">
+        <label for="" class="form-label">Brand</label>
+        <input required type="text" class="form-control" name="brand" id="brand" aria-describedby="helpId"
+          placeholder="">
+      </div>
+      <div class="mb-3 col-5">
+        <label for="" class="form-label">Model</label>
+        <input required type="text" class="form-control" name="model" id="model" aria-describedby="helpId"
+          placeholder="">
+      </div>
+      <div class="mb-3 col-2">
+        <label for="" class="form-label">Cost</label>
+        <input required type="number" class="form-control" name="cost" id="cost" aria-describedby="helpId"
+          placeholder="" value="2000" min="1990" max="3000">
+      </div>
+      <div class="mb-3 col-5">
+        <label for="" class="form-label">img url</label>
+        <input required type="text" class="form-control" name="imgUrl" id="imgUrl" aria-describedby="helpId"
+          placeholder="">
+      </div>
+      <button class="col-4 offset-8 btn btn-primary"> Create</button>
+    </form>
+    <!-- form -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
